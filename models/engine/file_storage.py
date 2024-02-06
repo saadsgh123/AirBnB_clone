@@ -2,11 +2,6 @@
 import json
 
 
-def new(obj):
-    """Set in __objects obj with key <obj_class_name>.id"""
-    FileStorage.__object = obj
-
-
 class FileStorage:
     """Represent an abstracted storage engine.
 
@@ -20,6 +15,10 @@ class FileStorage:
     def all(self):
         """Return the dictionary __objects."""
         return self.__object
+
+    def new(obj):
+        """Set in __objects obj with key <obj_class_name>.id"""
+        FileStorage.__object = obj
 
     def save(self):
         """Serialize __objects to the JSON file __file_path."""
