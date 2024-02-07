@@ -47,7 +47,7 @@ class BaseModel:
         """
         Returns string representation
         """
-        return (self.__str__())
+        return self.__str__()
 
     def save(self):
         """
