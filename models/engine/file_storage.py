@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import json
-
 from models.base_model import BaseModel
 from models.user import User
 from models.place import Place
@@ -18,29 +17,28 @@ class FileStorage:
             __objects (dict): A dictionary of instantiated objects.
         """
     __file_path = "data.json"
-    __object = {}
+    __objects = {}
     class_dict = {"BaseModel": BaseModel, "User": User, "Place": Place,
                   "Amenity": Amenity, "City": City, "Review": Review,
                   "State": State}
 
     def all(self):
         """Return the dictionary __objects."""
-        return self.__object
+        return self.__objects
 
     def new(self, obj):
         """Set in __objects obj with key <obj_class_name>.id"""
-        key = f"{str(obj.__class__.__name__)}.{str(obj.id)}"
-        self.__objects[key] = obj
+        k = "{}.{}".format(str(obj.__class__.__name__), str(obj.id))
+        FileStorage.__objects[k] = obj
 
     def save(self):
         """Serialize __objects to the JSON file __file_path."""
         my_dictionary = {}
-        if self.__object:
-            for k, v in self.__object.items():
-                my_dictionary[k] = v
-                json_string = json.dumps(my_dictionary)
-                with open(self.__file_path, "w") as in_file:
-                    in_file.write(json_string)
+        if self.__objects:
+            for k, v in self.__objects.items():
+                my_dictionary[k] = v.to_dict()
+            with open(self.__file_path, "w") as in_file:
+                json.dump(my_dictionary, in_file)
 
     def reload(self):
         """Deserialize the JSON file __file_path to __objects, if it exists."""
@@ -49,6 +47,6 @@ class FileStorage:
                 my_dictionary = json.load(out_file)
             for k, v in my_dictionary.items():
                 name = v['__class__']
-                self.__object[k] = self.class_dict[name](**v)
+                FileStorage.__objects[k] = self.class_dict[name](**v)
         except FileNotFoundError:
-            return
+            pass

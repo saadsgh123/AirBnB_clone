@@ -23,11 +23,11 @@ class BaseModel:
         """
         Initializes new instance of the BaseModel class
         """
-        form = "%Y-%m-%dT%H:%M:%S.%f"
+        format = "%Y-%m-%dT%H:%M:%S.%f"
         if kwargs:
             for key, value in kwargs.items():
                 if key in ['created_at', 'updated_at']:
-                    self.__dict__[key] = datetime.strptime(value, form)
+                    self.__dict__[key] = datetime.strptime(value, format)
                 else:
                     self.__dict__[key] = kwargs[key]
         else:
