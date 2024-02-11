@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
+"""
 Defines BaseModel Class
-'''
+"""
 import cmd
 import json
 import uuid
@@ -20,14 +20,17 @@ class BaseModel:
     """
 
     def __init__(self, *args, **kwargs):
+        """Initialize a new BaseModel.
+
+        Args:
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
         """
-        Initializes new instance of the BaseModel class
-        """
-        format = "%Y-%m-%dT%H:%M:%S.%f"
+        time_form = "%Y-%m-%dT%H:%M:%S.%f"
         if kwargs:
             for key, value in kwargs.items():
                 if key in ['created_at', 'updated_at']:
-                    self.__dict__[key] = datetime.strptime(value, format)
+                    self.__dict__[key] = datetime.strptime(value, time_form)
                 else:
                     self.__dict__[key] = kwargs[key]
         else:
