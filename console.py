@@ -63,8 +63,8 @@ class HBNBCommand(cmd.Cmd):
         except IndexError:
             print("** instance id missing **")
 
- def do_destroy(self, line):
-        """Destroys instance and saves changes to JSON file"""
+    def do_destroy(self, line):
+        """Destroys instance"""
         if len(line) == 0:
             print("** class name missing **")
             return
@@ -82,3 +82,5 @@ class HBNBCommand(cmd.Cmd):
                     storage.save()
         except IndexError:
             print("** instance id missing **")
+
+
