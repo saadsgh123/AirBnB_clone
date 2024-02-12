@@ -34,6 +34,11 @@ class HBNBCommand(cmd.Cmd):
         """Prints empty line when no argument"""
         pass
 
+    @classmethod
+    def parse(line):
+        """Parses user typed input"""
+        return tuple(line.split())
+
     def do_create(self, line):
         """Creates new instance specified by user"""
         if len(line) == 0:
@@ -50,7 +55,7 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             print("** class name missing **")
             return
-        args = parse(line)
+        args = (line)
         if args[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
             return
@@ -181,10 +186,9 @@ class HBNBCommand(cmd.Cmd):
         except IndexError:
             print("*** Unknown syntax: {}".format(line))
 
-    def parse(line):
-        """Parses user typed input"""
-        return tuple(line.split())
-
+def parse(line):
+    """Parses user typed input"""
+    return tuple(line.split())
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
