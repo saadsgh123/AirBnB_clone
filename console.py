@@ -124,6 +124,17 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** value missing **")
 
+    def do_count(self, line):
+        """Counts specified instances"""
+        if line in HBNBCommand.classes:
+            count = 0
+            for key, objs in storage.all().items():
+                if line in key:
+                    count += 1
+            print(count)
+        else:
+            print("** class doesn't exist **")
+
 
     def default(self, line):
         """Accepts class name followed by arguement"""
@@ -172,13 +183,3 @@ class HBNBCommand(cmd.Cmd):
             print("*** Unknown syntax: {}".format(line))
 
 
-def do_count(self, line):
-        """Counts specified instances"""
-        if line in HBNBCommand.classes:
-            count = 0
-            for key, objs in storage.all().items():
-                if line in key:
-                    count += 1
-            print(count)
-        else:
-            print("** class doesn't exist **")
