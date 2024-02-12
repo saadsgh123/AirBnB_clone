@@ -13,6 +13,7 @@ from models.place import Place
 from models.review import Review
 from models.city import City
 
+
 class HBNBCommand(cmd.Cmd):
     """
     HBNBCommand Class
@@ -99,7 +100,6 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exist **")
 
-
     def do_update(self, line):
         """Updates an instance"""
         args = parse(line)
@@ -134,7 +134,6 @@ class HBNBCommand(cmd.Cmd):
             print(count)
         else:
             print("** class doesn't exist **")
-
 
     def default(self, line):
         """Accepts class name followed by arguement"""
@@ -182,11 +181,10 @@ class HBNBCommand(cmd.Cmd):
         except IndexError:
             print("*** Unknown syntax: {}".format(line))
 
-
     def parse(line):
-    """Parses user typed input"""
-    return tuple(line.split())
+        """Parses user typed input"""
+        return tuple(line.split())
 
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     HBNBCommand().cmdloop()
