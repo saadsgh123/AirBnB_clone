@@ -1,23 +1,12 @@
 #!/usr/bin/python3
-"""
-Defines BaseModel Class
-"""
-import cmd
-import json
+"""Defines BaseModel Class"""
 import uuid
 import models
 from datetime import datetime
 
 
 class BaseModel:
-    """
-    Represents the BaseModel class for Airbnb clone project
-    Methods:
-        __init__(self, *args, **kwargs)
-        __str__(self)
-        __save(self)
-        to_dict(self)
-    """
+    """Represents the BaseModel of the HBnB project."""
 
     def __init__(self, *args, **kwargs):
         """Initialize a new BaseModel.
@@ -27,7 +16,7 @@ class BaseModel:
             **kwargs (dict): Key/value pairs of attributes.
         """
         time_form = "%Y-%m-%dT%H:%M:%S.%f"
-        if kwargs:
+        if len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key in ['created_at', 'updated_at']:
                     self.__dict__[key] = datetime.strptime(value, time_form)
@@ -53,9 +42,7 @@ class BaseModel:
         return self.__str__()
 
     def save(self):
-        """
-        Updates the attribute with the current datetime
-        """
+        """Updates the attribute with the current datetime"""
         self.updated_at = datetime.now()
         models.storage.save()
 
