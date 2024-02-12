@@ -172,3 +172,13 @@ class HBNBCommand(cmd.Cmd):
             print("*** Unknown syntax: {}".format(line))
 
 
+def do_count(self, line):
+        """Counts specified instances"""
+        if line in HBNBCommand.classes:
+            count = 0
+            for key, objs in storage.all().items():
+                if line in key:
+                    count += 1
+            print(count)
+        else:
+            print("** class doesn't exist **")
