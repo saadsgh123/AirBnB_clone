@@ -186,3 +186,7 @@ class HBNBCommand(cmd.Cmd):
     def parse(line):
     """Parses user typed input"""
     return tuple(line.split())
+
+
+    if __name__ == "__main__":
+    HBNBCommand().cmdloop()
