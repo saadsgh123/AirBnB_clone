@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae2d42e-21ff-46b9-9642-2938aaf47c76" name="Changes" comment="tests file modified" />
+    <list default="true" id="6ae2d42e-21ff-46b9-9642-2938aaf47c76" name="Changes" comment="tests file modified">
+      <change beforePath="$PROJECT_DIR$/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707853462555</updated>
-      <workItem from="1707853464126" duration="1104000" />
+      <workItem from="1707853464126" duration="1427000" />
     </task>
     <task id="LOCAL-00003" summary="tests file modified">
       <option name="closed" value="true" />

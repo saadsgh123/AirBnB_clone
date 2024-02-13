@@ -186,9 +186,11 @@ class HBNBCommand(cmd.Cmd):
         except IndexError:
             print("*** Unknown syntax: {}".format(line))
 
+
 def parse(line):
     """Parses user typed input"""
     return tuple(line.split())
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
