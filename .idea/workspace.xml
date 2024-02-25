@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ae2d42e-21ff-46b9-9642-2938aaf47c76" name="Changes" comment="tests file modified">
-      <change beforePath="$PROJECT_DIR$/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/AUTHORS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/0-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/1-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/2-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/styles/2-common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/styles/2-footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_static/styles/2-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AirBnB_clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AirBnB_clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,9 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2cKHgXKDZzMqWzwjb15ou3BE99N" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,10 +47,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python tests.Python tests for test_base_model.TestBaseModel_to_dict.test_contrast_to_dict_dunder_dict.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/macbookpro/Desktop/ALX-Projects/AirBnB_clone/web_static",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -45,6 +62,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web_static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Python tests for test_base_model.TestBaseModel_to_dict.test_contrast_to_dict_dunder_dict" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AirBnB_clone" />
@@ -62,18 +84,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests for test_base_model.TestBaseModel_to_dict.test_contrast_to_dict_dunder_dict" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,7 +109,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707853462555</updated>
-      <workItem from="1707853464126" duration="1427000" />
+      <workItem from="1707853464126" duration="1605000" />
+      <workItem from="1708370738376" duration="3297000" />
     </task>
     <task id="LOCAL-00003" summary="tests file modified">
       <option name="closed" value="true" />
